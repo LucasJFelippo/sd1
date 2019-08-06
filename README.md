@@ -1,2 +1,9 @@
-# ds1
-Software Development I
+# Software Development I
+
+**Used:**
+```
+PhP
+MySQL
+PhPMyAdmin
+PostgresSQL
+```
