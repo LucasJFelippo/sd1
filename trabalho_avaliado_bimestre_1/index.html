@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/index.css">
+        <title>Trabalho</title>
+    </head>
+    <body>
+        <div id="link">
+            <a href="singin.html">Registrar</a>
+            <a href="login.html">Entrar</a>
+            <h5 id="error"></h5>
+        </div>
+        <script>
+            cookie = document.cookie;
+            if (cookie.indexOf("status") >= 0) {
+                p = document.querySelector('#error');
+                p.innerHTML = "Sucesso ao sair da conta!";
+            }
+            if (cookie.indexOf("user") >= 0) {
+                window.location.href = "php/cookie.php";
+            }
+        </script>
+    </body>
+</html>

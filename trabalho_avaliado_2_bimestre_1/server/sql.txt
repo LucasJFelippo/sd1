@@ -1,0 +1,9 @@
+CREATE TABLE "medi" (
+	"id" SERIAL NOT NULL,
+	"name" varchar(100) NOT NULL,
+	"producer" varchar(100) NOT NULL,
+	"control" bit NOT NULL,
+	"quant" int NOT NULL,
+	"price" float NOT NULL,
+	CONSTRAINT "medipk" PRIMARY KEY ("id")
+)

@@ -1,0 +1,16 @@
+#divtable {
+    position: relative;
+    top: 50%;
+    left: 50%;
+}
+#table {
+    transform: translate(-50%, -50%);
+}
+#a {
+    position: relative;
+    top: -10px;
+    left: -120px;
+}
+#table th, #table td {
+    padding-right: 30px;
+}

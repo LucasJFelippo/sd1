@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/in.css">
+        <title>Entrar</title>
+    </head>
+    <body>
+        <div id="form">
+            <form action="php/login.php" method="post">
+                <input type="text" name="name" placeholder="Nome"> <br> <br>
+                <input type="email" name="email" placeholder="Email"> <br> <br>
+                <h6 id="error"></h6>
+                <br>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+        <script>
+            cookie = document.cookie;
+            if (cookie.indexOf("status") >= 0) {
+                p = document.querySelector('#error');
+                p.innerHTML = "Nome ou Senha errados, por favor tente novamente!";
+            }
+            if (cookie.indexOf("user") >= 0) {
+                window.location.href = "php/cookie.php";
+            }
+        </script>
+    </body>
+</html>
